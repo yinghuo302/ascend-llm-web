@@ -19,6 +19,7 @@ export default function ChatBot() {
 	const getMessage = () => {
 		if (process()) {
 			setTimeout(getMessage, getMesgTimeout)
+			return 
 		}
 		ajax.ajax({
 			type: "GET",
