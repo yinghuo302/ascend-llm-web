@@ -7,6 +7,7 @@ import texmath from 'markdown-it-texmath';
 import { light as emoji } from 'markdown-it-emoji'
 import "../assets/css/katex.min.css"
 const mdRender = markdownit({
+	breaks: true,
 	highlight: function (str, lang) {
 		if (lang && hljs.getLanguage(lang)) {
 			try {
