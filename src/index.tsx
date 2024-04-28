@@ -2,7 +2,7 @@
 import { render } from 'solid-js/web';
 import './index.css';
 import ChatBot from './components/chatbot';
-
+import Sidebar from './components/sidebar';
 const root = document.getElementById('root');
 
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
@@ -20,6 +20,8 @@ render(
 	() => (
 		<>
 			<div class='fixed top-0 left-0 flex flex-row w-screen h-screen'>
+				<Sidebar></Sidebar>
+				<div class='border-2 border-solid border-gray'></div>
 				<ChatBot></ChatBot>
 			</div>
 		</>

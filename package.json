@@ -23,6 +23,7 @@
     "markdown-it": "^14.1.0",
     "markdown-it-emoji": "^3.0.0",
     "markdown-it-texmath": "^1.0.0",
+    "mitt": "^3.0.1",
     "solid-js": "^1.6.10"
   }
 }
