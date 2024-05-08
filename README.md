@@ -1,19 +1,19 @@
 # ascend-llm-web
 
-
-
 ascend-llm前端代码
 
-效果图
+## 效果图
 
-![输入图片说明](https://foruda.gitee.com/images/1713943474484081195/a0fcaae1_8369745.png "截图 2024-04-24 15-01-55.png")
+![](./assets/webui.png)
 
+## 运行与打包
 
+请确保node.js版本大于等于v18.x，本项目开发为v20.12.2，node.js安装请参考[官方文档](https://github.com/nodesource/distributions/blob/master/README.md)
 
 ### 安装依赖
 
 ```shell
-pnpm install
+pnpm install #如没有安装pnpm，请使用npm install
 ```
 
 ### 测试运行
