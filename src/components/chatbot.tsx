@@ -84,6 +84,8 @@ export default function ChatBot() {
 	}
 
 	const clearHistory = () => {
+		if(disabled) return
+		setDisabled(true)
 		ajax.ajax({
 			type: "GET",
 			url: "/api/reset",
@@ -91,7 +93,8 @@ export default function ChatBot() {
 			if (res.code != 200) {
 				window.alert("清除历史失败")
 			} else {
-				setMessages([{ text: '你好,我是聊天机器人助手,很高兴为你服务!', isBot: true, idx: 0 }])
+				setMessages([{ text: 'Hello, I am a robot assistant. Do you have any questions?', isBot: true, idx: 0 }])
+				setDisabled(false)
 			}
 		}, () => {
 			window.alert("清除历史失败")
