@@ -7,7 +7,7 @@ import MarkdownRoot from "./md";
 import { bus } from "../utils";
 export default function ChatBot() {
 	const [messages, setMessages] = createStore([
-		{ text: '你好,我是聊天机器人助手,很高兴为你服务!', isBot: true, idx: 0 },
+		{ text: 'Hello, I am a robot assistant. Do you have any questions?', isBot: true, idx: 0 },
 	]);
 	const [getProcess, setProcess] = createSignal(false)
 	let input: HTMLTextAreaElement = null
